@@ -5,6 +5,8 @@ class CommentsController < ApplicationController
   end
 
   def create
+    @comment = @commentable.comments.create(comment_params)
+    redirect_to :back
   end
 
   private

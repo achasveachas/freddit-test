@@ -4,7 +4,7 @@
 <h3>Comments</h3>
 
 <%= form_for [@conversation, Comment.new] do |f| %>
-  <%= f.text_area :body, placeholder: "Add a comment" %><br>
+  <%= f.text_field :body, placeholder: "Add a comment" %><br>
   <%= f.submit "Add Comment" %>
 <% end %>
 
